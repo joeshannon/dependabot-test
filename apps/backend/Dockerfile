@@ -1,4 +1,4 @@
-FROM node:22.14.0-alpine AS build-stage
+FROM node:26.8.1-alpine AS build-stage
 
 USER node
 
@@ -10,7 +10,7 @@ WORKDIR /home/node/app/backend
 
 RUN echo "hello world"
 
-FROM node:22.14.0-alpine
+FROM node:26.8.1-alpine
 
 USER node
 
