@@ -8,25 +8,21 @@ updates:
   - package-ecosystem: "docker"
     directory: "/apps/backend"
     schedule:
-      interval: 'weekly'
-      day: 'sunday'
-      time: '10:00'
+      interval: "cron"
+      cronjob: "55 * * * *"
     open-pull-requests-limit: 1
     pull-request-branch-name:
       separator: '-'
-    versioning-strategy: increase-if-necessary
     cooldown:
       default-days: 7
 
   - package-ecosystem: "docker"
     directory: "/apps/frontend"
     schedule:
-      interval: 'weekly'
-      day: 'sunday'
-      time: '10:00'
+      interval: "cron"
+      cronjob: "55 * * * *"
     open-pull-requests-limit: 1
     pull-request-branch-name:
       separator: '-'
-    versioning-strategy: increase-if-necessary
     cooldown:
       default-days: 7
