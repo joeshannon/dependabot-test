@@ -12,7 +12,7 @@ RUN echo $BUILD_VERSION > build-version.txt
 
 
 # Stage 1, based on Nginx, to have only the compiled app, ready for production with Nginx
-FROM nginxinc/nginx-unprivileged:alpine3.23
+FROM nginxinc/nginx-unprivileged:1.31.5-alpine
 
 RUN echo "hello world"
 
