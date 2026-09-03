@@ -9,20 +9,16 @@ updates:
     directory: "/apps/backend"
     schedule:
       interval: "cron"
-      cronjob: "55 9 * * *"
+      cronjob: "10 10 * * *"
     open-pull-requests-limit: 1
     pull-request-branch-name:
       separator: '-'
-    cooldown:
-      default-days: 7
 
   - package-ecosystem: "docker"
     directory: "/apps/frontend"
     schedule:
       interval: "cron"
-      cronjob: "55 9 * * *"
+      cronjob: "10 10 * * *"
     open-pull-requests-limit: 1
     pull-request-branch-name:
       separator: '-'
-    cooldown:
-      default-days: 7
