@@ -14,9 +14,11 @@ updates:
     directories: 
       - "/apps/frontend"
       - "/apps/backend"
+      - "/apps/app1"
+      - "/apps/app2"
     schedule:
       interval: "cron"
-      cronjob: "20 17 * * *"
+      cronjob: "22 20 * * *"
     open-pull-requests-limit: 5
     pull-request-branch-name:
       separator: '-'
