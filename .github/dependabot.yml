@@ -5,30 +5,18 @@
 
 version: 2
 updates:
-  - package-ecosystem: "docker"
-    directory: "/apps/backend"
-    schedule:
-      interval: "cron"
-      cronjob: "35 11 * * *"
-    open-pull-requests-limit: 1
-    pull-request-branch-name:
-      separator: '-'
-    allow:
-      - dependency-name: "node"
-        update-types:
-          - "version-update:semver-minor"
-          - "version-update:semver-patch"
-    
 
   - package-ecosystem: "docker"
     allow:
       - update-types:
           - "version-update:semver-minor"
           - "version-update:semver-patch"
-    directory: "/apps/frontend"
+    directories: 
+      - "/apps/frontend"
+      - "/apps/backend"
     schedule:
       interval: "cron"
-      cronjob: "35 11 * * *"
+      cronjob: "25 15 * * *"
     open-pull-requests-limit: 1
     pull-request-branch-name:
       separator: '-'
