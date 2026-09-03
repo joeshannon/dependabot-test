@@ -16,7 +16,7 @@ updates:
       - "/apps/backend"
     schedule:
       interval: "cron"
-      cronjob: "17 16 * * *"
+      cronjob: "20 17 * * *"
     open-pull-requests-limit: 5
     pull-request-branch-name:
       separator: '-'
